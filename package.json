@@ -1,0 +1,16 @@
+{
+  "name": "rn-viewport",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehcode/rn-viewport.git"
+  },
+  "author": "Ryan Leckey <leckey.ryan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mehcode/rn-viewport/issues"
+  },
+  "homepage": "https://github.com/mehcode/rn-viewport#readme"
+}
