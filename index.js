@@ -1,21 +1,16 @@
 import {Dimensions} from "react-native";
 
-const d = Dimensions.get("window");
+// iPhone 6/7 sizes
+const width = 375;
+const height = 667;
 
-export let width = 375;
-export let height = 667;
+// scale to the window size
+const window = Dimensions.get("window");
 
-export function configure(w, h) {
-  width = w;
-  height = h;
-}
+// min() for compensating for landscape mode
+const scaleFactor = Math.min(window.width, window.height) / width;
 
-export const vw = (d.width / 100);
-export const vh = (d.height / 100);
-
-export const vmin = Math.min(vw, vh);
-export const vmax = Math.max(vw, vh);
-
-export function vu(size) {
-  return ((size / width) * vmin) * 100;
+// return size relative to the iPhone 6/7 display points
+function vu(size) {
+  return size * scaleFactor;
 }
