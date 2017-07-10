@@ -11,6 +11,6 @@ const window = Dimensions.get("window");
 const scaleFactor = Math.min(window.width, window.height) / width;
 
 // return size relative to the iPhone 6/7 display points
-function vu(size) {
+export function vu(size) {
   return size * scaleFactor;
 }
